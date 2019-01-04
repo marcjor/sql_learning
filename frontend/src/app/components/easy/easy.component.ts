@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {Easy} from "./easy";
 import {EasyService} from "./easy.service";
-import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-easy',
@@ -20,7 +19,7 @@ export class EasyComponent implements OnInit {
     this._personnes = value;
   }
 
-  constructor(private easyservice: EasyService, private router: Router) { }
+  constructor(private easyservice: EasyService) { }
 
   ngOnInit() {
     this.fetchEasy()

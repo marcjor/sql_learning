@@ -8,11 +8,8 @@ import {FormsModule} from '@angular/forms';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import { HomeComponent } from './components/home/home.component';
 import { EasyComponent } from './components/easy/easy.component';
-<<<<<<< HEAD
 import {HttpClientModule} from "@angular/common/http";
-=======
 import { EasyIntermediaireComponent } from './components/easy-intermediaire/easy-intermediaire.component';
->>>>>>> f3e465f9ab07ca594ba37c9e8041f31d672f92a1
 
 @NgModule({
   declarations: [
