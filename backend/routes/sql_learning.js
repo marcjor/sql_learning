@@ -2,10 +2,10 @@ const express = require('express');
 const mysql = require('mysql');
 const router = express.Router();
 
-router.get('/facile', (req, res)=> {
-    console.log("Fetching table 'facile'...");
+router.get('/easy', (req, res)=> {
+    console.log("Fetching table 'personnes'...");
 
-    const getAll = "SELECT * FROM facile";
+    const getAll = "SELECT * FROM personnes";
     getConnection().query(getAll, (err, rows, fields) => {
         if (err) {
             console.log("Failed to getAll: " + err);
