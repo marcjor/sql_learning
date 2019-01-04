@@ -1,3 +1,47 @@
-<p>
-  easy works!
-</p>
+<div class="container-table">
+
+  <div class="table1">
+      <table class="table table-sm table-hover table-bordered">
+        <thead class="thead-dark">
+        <tr>
+          <th>ID</th>
+          <th>Prénom</th>
+          <th>Nom</th>
+          <th>Langue</th>
+          <th>Pays</th>
+        </tr>
+        </thead>
+        <tr *ngFor="let element of personnes">
+          <td>{{element.id}}</td>
+          <td>{{element.prenom}}</td>
+          <td>{{element.nom}}</td>
+          <td>{{element.langue}}</td>
+          <td>{{element.pays}}</td>
+        </tr>
+      </table>
+  </div>
+
+  <div class="table1">
+    <table class="table table-dark table-sm table-hover table-bordered">
+      <thead class="thead-light">
+      <tr>
+        <th>ID</th>
+        <th>Prénom</th>
+        <th>Nom</th>
+        <th>Langue</th>
+        <th>Pays</th>
+      </tr>
+      </thead>
+      <tr *ngFor="let element of personnes">
+        <td>{{element.id}}</td>
+        <td>{{element.prenom}}</td>
+        <td>{{element.nom}}</td>
+        <td>{{element.langue}}</td>
+        <td>{{element.pays}}</td>
+      </tr>
+    </table>
+  </div>
+
+
+
+</div>
