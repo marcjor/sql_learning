@@ -8,13 +8,15 @@ import {FormsModule} from '@angular/forms';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import { HomeComponent } from './components/home/home.component';
 import { EasyComponent } from './components/easy/easy.component';
+import { EasyIntermediaireComponent } from './components/easy-intermediaire/easy-intermediaire.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PageNotFoundComponent,
     HomeComponent,
-    EasyComponent
+    EasyComponent,
+    EasyIntermediaireComponent
   ],
   imports: [
     BrowserModule,
