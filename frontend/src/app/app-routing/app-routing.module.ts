@@ -4,9 +4,11 @@ import {Route, RouterModule} from '@angular/router';
 
 import {PageNotFoundComponent} from '../components/page-not-found/page-not-found.component';
 import {HomeComponent} from '../components/home/home.component';
+import {EasyComponent} from "../components/easy/easy.component";
 
 const routes: Route[] = [
   {path: '', component: HomeComponent},
+  {path: 'easy', component: EasyComponent},
   {path: '**', component: PageNotFoundComponent}
 ];
 

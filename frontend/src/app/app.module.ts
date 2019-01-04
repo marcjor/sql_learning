@@ -7,12 +7,14 @@ import {FormsModule} from '@angular/forms';
 
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import { HomeComponent } from './components/home/home.component';
+import { EasyComponent } from './components/easy/easy.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PageNotFoundComponent,
-    HomeComponent
+    HomeComponent,
+    EasyComponent
   ],
   imports: [
     BrowserModule,
