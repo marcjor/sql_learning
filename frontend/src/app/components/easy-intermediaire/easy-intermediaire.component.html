@@ -1,47 +1,46 @@
-<h1>La notion de table</h1><br>
-<p>
-  On représente les données sous forme de tables. Une base de données va donc contenir plusieurs tables. Elle peut
-  n'en contenir qu'une, bien sûr, mais c'est rarement le cas.
-</p>
-<p>
-  Une table représente un type de données organisées, dans notre exemple, des personnes.
-</p>
-<p>
-  Chaque table est organisée en colonnes, qui sont les caractéristiques de l'objet représenté par la table.
-</p>
-<p>
-  On a
-  donc ici une colonne "nom", une colonne "prenom", une colonne "langue", une colonne "pays" et une colonne "id"
-  qui
-  nous permettent d'identifier les personnes individuellement (les noms et prénoms ne suffisent pas toujours).
-</p>
-<h1>L'état de notre table</h1><br>
-<table class="table table-sm table-hover table-bordered">
-  <thead class="thead-dark">
-  <tr>
-    <th>ID</th>
-    <th>Prénom</th>
-    <th>Nom</th>
-    <th>Langue</th>
-    <th>Pays</th>
-  </tr>
-  </thead>
-  <tr *ngFor="let element of personnes">
-    <td>{{element.id}}</td>
-    <td>{{element.prenom}}</td>
-    <td>{{element.nom}}</td>
-    <td>{{element.langue}}</td>
-    <td>{{element.pays}}</td>
-  </tr>
-</table>
-<p>
-  Dans une table, il est possible de sélectionner, modifier et supprimer des données.
-  Ceci en utilisant des mots et des syntaxes spécifiques.
-</p>
-<p>
-  Nous allons d'abord SELECTIONNER des données dans notre table.
-</p>
-<h1>
-  A vous de jouer.
-</h1>
-<p> Cliquez n'importe où pour quitter</p>
+<div class="container-top">
+  <div class="explanation">
+    <p>
+      On représente les données sous forme de tables. Une base de données va donc contenir plusieurs tables.<br> Elle peut
+      n'en contenir qu'une, bien sûr, mais c'est rarement le cas. Une table représente un type de données organisées,
+      dans notre exemple, des personnes. <br> Chaque table est organisée en colonnes, qui sont les caractéristiques de l'objet
+      représenté par la table.<br> On a donc ici une colonne "nom", une colonne "prenom", une colonne "langue", une colonne
+      "pays" et une colonne "id" qui nous permettent d'identifier les personnes individuellement (les noms et prénoms ne
+      suffisent pas toujours).
+    </p>
+  </div>
+</div>
+
+<div class="container-bot">
+  <div class="left">
+    <table class="table table-sm table-hover table-bordered">
+      <thead class="thead-dark">
+      <tr>
+        <th>ID</th>
+        <th>Prénom</th>
+        <th>Nom</th>
+        <th>Langue</th>
+        <th>Pays</th>
+      </tr>
+      </thead>
+      <tr *ngFor="let element of personnes">
+        <td>{{element.id}}</td>
+        <td>{{element.prenom}}</td>
+        <td>{{element.nom}}</td>
+        <td>{{element.langue}}</td>
+        <td>{{element.pays}}</td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="right">
+    <div class="explanation">
+      <p>Dans une table, il est possible de sélectionner, modifier et supprimer des données. Ceci en utilisant des mots et
+        des syntaxes spécifiques.</p>
+      <p>Nous allons d'abord SELECTIONNER des données dans notre table.</p>
+    </div>
+
+    <h1 class="blink_me">A vous de jouer.</h1>
+    <a routerLink="/easy"><button class="button button1">{{start | uppercase}}</button></a>
+  </div>
+</div>

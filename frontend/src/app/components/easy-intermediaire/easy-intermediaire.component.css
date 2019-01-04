@@ -1,4 +1,100 @@
-#login-modal{
-  background-color: whitesmoke;
-  color: #008CBA;
+table {
+  width: 50%;
+}
+
+h1 {
+  font-weight: bold;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.container-top {
+  width: 100%;
+  height: 100%;
+  margin-left: 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+.container-bot {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-left: 25px;
+  display: flex;
+  flex-direction:row;
+}
+
+.explanation {
+  width: 80%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 200px;
+  padding: 20px 0px 20px 0px;
+  background-color: #f9f9f9;
+  border-left: 6px solid #008CBA;
+  box-shadow: 10px 10px 10px lightgrey;
+  color: darkgrey;
+}
+
+.explanation > p {
+  margin: 0px 20px 0px 20px;
+}
+
+.left {
+  width: 50%;
+}
+
+.right {
+  width: 50%;
+}
+
+.right > .explanation {
+  width: 85%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 0px;
+  padding: 20px 0px 20px 0px;
+  background-color: #f9f9f9;
+  border-left: 6px solid #008CBA;
+  box-shadow: 10px 10px 10px lightgrey;
+  color: darkgrey;
+}
+
+@-webkit-keyframes blink_me {
+  from {opacity: 1.0;}
+  to {opacity: 0.0;}
+}
+.blink_me{
+  text-decoration: blink;
+  -webkit-animation-name: blink_me;
+  -webkit-animation-duration: 1.0s;
+  -webkit-animation-iteration-count:infinite;
+  -webkit-animation-timing-function:ease-in-out;
+  -webkit-animation-direction: alternate;
+}
+
+.button {
+  background-color: #008CBA;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 4px 2px 50px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: white;
+  color: black;
+  border: 2px solid #008CBA;
+}
+
+.button1:hover {
+  background-color: #008CBA;
+  color: white;
 }
