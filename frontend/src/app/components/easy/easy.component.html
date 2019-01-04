@@ -1,6 +1,16 @@
-<div class="container-table">
+<script src="../../../jquery/jquery.js"></script>
+  <div class="explanation">
+    <p>
+      Le mot clé pour séléctionner est "SELECT". <br> Pour afficher toutes les colonnes d'une table on utilise le
+      caractère "*". <br> Finalement, on utilise le mot clé "FROM" pour spécifier la table que l'on veut utiliser.</p>
+    <hr>
+      <p>Cliquez sur les mots clés pour construire votre requête.</p>
+  </div>
 
-  <div class="table1">
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-4">
+
       <table class="table table-sm table-hover table-bordered">
         <thead class="thead-dark">
         <tr>
@@ -19,29 +29,50 @@
           <td>{{element.pays}}</td>
         </tr>
       </table>
+
+    </div>
+
+    <div class="col-4">
+        <form class="">
+          <div class="form-group">
+          <button type="button" class="button button1" id="btn-1">{{from | uppercase}}</button>
+          <button type="button" class="button button1" id="btn-2">{{table | uppercase}}</button>
+          <button type="button" class="button button1" id="btn-3">{{select | uppercase}}</button>
+          <button type="button" class="button button1" id="btn-4">{{star | uppercase}}</button>
+          <div class="input-group">
+            <input type="text" class="form-control text" id="inp-1">
+            <input type="text" class="form-control text" id="inp-2">
+            <input type="text" class="form-control text"  id="inp-3">
+            <input type="text" class="form-control text" id="inp-4">
+          </div>
+          <button type="submit" class="btn btn-primary" id="submit">SEND</button>
+          </div>
+        </form>
+
+    </div>
+
+    <div class="col-4">
+
+      <table class="table table-dark table-sm table-hover table-bordered">
+        <thead class="thead-light">
+        <tr>
+          <th>ID</th>
+          <th>Prénom</th>
+          <th>Nom</th>
+          <th>Langue</th>
+          <th>Pays</th>
+        </tr>
+        </thead>
+          <tr *ngFor="let element of personnes">
+            <td>{{element.id}}</td>
+            <td>{{element.prenom}}</td>
+            <td>{{element.nom}}</td>
+            <td>{{element.langue}}</td>
+            <td>{{element.pays}}</td>
+          </tr>
+      </table>
+
+    </div>
   </div>
-
-  <div class="table1">
-    <table class="table table-dark table-sm table-hover table-bordered">
-      <thead class="thead-light">
-      <tr>
-        <th>ID</th>
-        <th>Prénom</th>
-        <th>Nom</th>
-        <th>Langue</th>
-        <th>Pays</th>
-      </tr>
-      </thead>
-      <tr *ngFor="let element of personnes">
-        <td>{{element.id}}</td>
-        <td>{{element.prenom}}</td>
-        <td>{{element.nom}}</td>
-        <td>{{element.langue}}</td>
-        <td>{{element.pays}}</td>
-      </tr>
-    </table>
-  </div>
-
-
 
 </div>

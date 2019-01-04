@@ -19,7 +19,49 @@ export class EasyComponent implements OnInit {
     this._personnes = value;
   }
 
-  constructor(private easyservice: EasyService) { }
+  private _select: string;
+  private _star: string;
+  private _from: string;
+  private _table: string;
+
+  get select(): string {
+    return this._select;
+  }
+
+  set select(value: string) {
+    this._select = value;
+  }
+
+  get star(): string {
+    return this._star;
+  }
+
+  set star(value: string) {
+    this._star = value;
+  }
+
+  get from(): string {
+    return this._from;
+  }
+
+  set from(value: string) {
+    this._from = value;
+  }
+
+  get table(): string {
+    return this._table;
+  }
+
+  set table(value: string) {
+    this._table = value;
+  }
+
+  constructor(private easyservice: EasyService) {
+    this._select = 'SELECT';
+    this._star = '*';
+    this._from = 'FROM';
+    this._table = 'personnes';
+  }
 
   ngOnInit() {
     this.fetchEasy()
@@ -31,5 +73,9 @@ export class EasyComponent implements OnInit {
       console.log('Data requested:');
       console.log(this._personnes);
     });
+  }
+
+  public checkSQL(): void {
+
   }
 }
