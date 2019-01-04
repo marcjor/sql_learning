@@ -19,7 +19,19 @@ export class EasyIntermediaireComponent implements OnInit {
     this._personnes = value;
   }
 
-  constructor(private easyservice: EasyService) { }
+  private _start: string;
+
+  get start(): string {
+    return this._start;
+  }
+
+  set start(value: string) {
+    this._start = value;
+  }
+
+  constructor(private easyservice: EasyService) {
+    this._start = 'start';
+  }
 
   ngOnInit() {
     this.fetchEasy()
