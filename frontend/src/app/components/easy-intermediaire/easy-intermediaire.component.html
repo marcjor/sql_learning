@@ -1,0 +1,120 @@
+<button id="openModal" #openModal [hidden]="true"
+        data-toggle="modal" data-target="#login-modal"></button>
+
+<!-- Modal -->
+<div class="modal" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"
+     style="display: none;">
+  <div class="modal-dialog">
+    <div class="loginmodal-container">
+      <h1>La notion de table</h1><br>
+      <p>
+        On représente les données sous forme de tables. Une base de données va donc contenir plusieurs tables. Elle peut
+        n'en contenir qu'une, bien sûr, mais c'est rarement le cas.
+      </p>
+      <p>
+        Une table représente un type de données organisées, dans notre exemple, des personnes.
+      </p>
+      <p>
+        Chaque table est organisée en colonnes, qui sont les caractéristiques de l'objet représenté par la table.
+      </p>
+      <p>
+        On a
+        donc ici une colonne "nom", une colonne "prenom", une colonne "langue", une colonne "pays" et une colonne "id"
+        qui
+        nous permettent d'identifier les personnes individuellement (les noms et prénoms ne suffisent pas toujours).
+      </p>
+      <h1>L'état de notre table</h1><br>
+      <table class="table table-striped">
+        <tr>
+          <th>id</th>
+          <th>prenom</th>
+          <th>nom</th>
+          <th>langue</th>
+          <th>pays</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Barbara</td>
+          <td>Streisand</td>
+          <td>Anglais</td>
+          <td>USA</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>John</td>
+          <td>Lennon</td>
+          <td>Anglais</td>
+          <td>UK</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Freddy</td>
+          <td>Mercury</td>
+          <td>Anglais</td>
+          <td>UK</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Pierre</td>
+          <td>Rapsat</td>
+          <td>Français</td>
+          <td>BE</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>Pierre</td>
+          <td>Kroll</td>
+          <td>Français</td>
+          <td>BE</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>Johnny</td>
+          <td>Holliday</td>
+          <td>Français</td>
+          <td>FR</td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td>Till</td>
+          <td>Lindeman</td>
+          <td>Allemand</td>
+          <td>DE</td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td>Angela</td>
+          <td>Merkel</td>
+          <td>Allemand</td>
+          <td>DE</td>
+        </tr>
+        <tr>
+          <td>9</td>
+          <td>Isabel</td>
+          <td>Huppert</td>
+          <td>Français</td>
+          <td>FR</td>
+        </tr>
+        <tr>
+          <td>10</td>
+          <td>Jean</td>
+          <td>Pütz</td>
+          <td>Allemand</td>
+          <td>LU</td>
+        </tr>
+      </table>
+      <p>
+        Dans une table, il est possible de sélectionner, modifier et supprimer des données.
+        Ceci en utilisant des mots et des syntaxes spécifiques.
+      </p>
+      <p>
+        Nous allons d'abord SELECTIONNER des données dans notre table.
+      </p>
+      <h1>
+        A vous de jouer.
+      </h1>
+      <p> Cliquez n'importe où pour quitter</p>
+    </div>
+  </div>
+</div>
+
